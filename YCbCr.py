@@ -1,7 +1,9 @@
 # Convert to YCbCr
-image = image.convert('YCbCr')
+import matplotlib.pyplot as plt
+
 
 def showYCbCr(image):
+    image = image.convert('YCbCr')
     # Plot
     plt.close()
     # Main Image
@@ -22,5 +24,3 @@ def showYCbCr(image):
     plt.title('YCb[Cr]')
     # Show
     plt.show()
-
-showYCbCr(image)
